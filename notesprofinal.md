@@ -5,6 +5,7 @@ git init
 ```
 Intializes git in the current path
 
+---
 
 
 ```
@@ -13,7 +14,7 @@ git clone [SSH link of the remote repo]
 Clones the remote repository into your local machine
 
 ---
-
+---
 ## Add & Commit
 
 ```
@@ -23,39 +24,45 @@ Tracks the file (tracks the changes you've made)
 
 * Using . instead of filename will track all the files that have not been tracked
 
+---
 
 ```
 git status  
 ```   
 Displays the status of the files.
 
+---
 
 
 ```
  git commit -m "Commmit Title" -m "Some Description"
 ```
 
-Commits the changes (save changes locally)
+Commits the changes (saves changes locally)
 
+---
 ```
  git commit -am "Title" -m "Desc"
 ```
 
 Adds the file and commits it. Works only with modified files.
 
-New files need to be added seperately before committing.
+  * New files need to be added seperately before committing.
 
+---
 
 ```
 git remote add origin [SSH link of the remote repo] 
 ```
 Connects to the remote repository
 
+---
 ```
 git remote - v
 ```
 Checks if the connection has been established to the repository
 
+---
 ```
 git push -u origin master
 ```
@@ -63,14 +70,14 @@ git push -u origin master
 Pushes all the committed files to the **master** branch in the remote repository
 
  * -u sets the default push location to _origin master_
-
+---
 ```
 git push
 ```
 Pushes directly to _origin master_ since the default location has been set to it in the previous command.
 
-----
-
+---
+---
 ## Branching
 
 ```
@@ -86,7 +93,7 @@ Displays all branches in the local repository
 ```
 Current branch is indicated with *
 
-___
+---
 
 ```
 git branch -d [branch]
@@ -112,8 +119,6 @@ git diff
 Shows the difference in code after changing but before tracking
 
 ---
-___
-
 ## Merging
 
 
@@ -123,12 +128,14 @@ git pull origin master
 Pulls the merged master file from the remote repository to the local machine
 
 
-
+---
 ```
 git merge [branch]
 ```
 Merges the given branch to the main branch
-___
+
+---
+---
 ## Reset
 
 ```
@@ -136,22 +143,26 @@ git reset [filename]
 ```
 Resets all the changes in file that has been tracked but not yet committed
 
+---
 ```
 git reset
 ````
 Reset command without the filename resets all the files that have been modified
 
+---
 ```
 git reset HEAD~1
 ```
 This command undoes the commit.  
 It actually resets the pointer which is currently pointing to **HEAD** (the latest commit) and sets it to **HEAD-1**
 
+---
 ```
 git log 
 ```
 Displays the log of all the commits  
 
+----
 
 
 ```
@@ -173,17 +184,20 @@ Date:   Mon Nov 22 16:22:13 2021 +0530
 
     Created index.html
 ```
-Above, we can see 3 commits of a sample git log 
+Above, we can see 3 commits of a sample git log
+
+---
 ```
 git reset [hashkey]
 ```
 Resets to the commit with the specified hashkey.  
-Hashkeys of commits can be found in the first line of every commit in _git log_
+ * Hashkeys of commits can be found in the first line of every commit in _git log_
 
+---
 ```
 git reset --hard [hashkey]
 ```
 Resets to the commit specified and also deletes all the commits after the current one
 ___
-
+---
 
