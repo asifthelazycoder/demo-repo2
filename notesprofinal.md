@@ -14,7 +14,6 @@ git clone [SSH link of the remote repo]
 Clones the remote repository into your local machine
 
 ---
----
 ## Add & Commit
 
 ```
