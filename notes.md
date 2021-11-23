@@ -78,6 +78,7 @@ git branch
 ```
 Displays all branches in the local repository
 
+---
 ```
   debug
   feature
@@ -85,28 +86,32 @@ Displays all branches in the local repository
 ```
 Current branch is indicated with *
 
+___
 
 ```
 git branch -d [branch]
 ```
 Deletes the specified branch.
 
-
+---
 ```
 git checkout -b [branch_name]
 ```
 Creates a new branch with the given name
 
+---
 ```
 git checkout [branch]
 ```
 Switches to the specified branch
 
-
+---
 ```
 git diff
 ```
 Shows the difference in code after changing but before tracking
+
+---
 ___
 
 ## Merging
