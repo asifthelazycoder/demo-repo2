@@ -1,4 +1,4 @@
-## Terminology
+# Terminology
 ___
 
 ## Git
