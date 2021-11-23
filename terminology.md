@@ -1,4 +1,5 @@
 ## Terminology
+___
 
 ## Git
 A tool tool that tracks your changes in code overtime
