@@ -17,7 +17,7 @@ ___
 Two files will be generated:
 + [file] key - private key, which will be used to verify you are the owner of the account with so and so public key.
 
-+ [file] key.pub - public key, which you need to update your to the remote repository under the SSH section
++ [file] key.pub - public key, which you need to update in your code-hosting site (like GitHub) under the SSH section
 
 ### 2. Adding the SSH key to the ssh-agent
 ___
